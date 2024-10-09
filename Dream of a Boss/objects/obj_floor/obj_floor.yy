@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_floor",
+  "eventList":[],
   "managed":true,
-  "name":"obj_boss",
+  "name":"obj_floor",
   "overriddenProperties":[],
   "parent":{
     "name":"Boss_fight",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite2",
-    "path":"sprites/Sprite2/Sprite2.yy",
+    "name":"ground",
+    "path":"sprites/ground/ground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

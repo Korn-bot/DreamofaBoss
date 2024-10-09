@@ -27,3 +27,10 @@ function Vector2(Nx,Ny) constructor
 		y = y / Nvec2.y;
 	}
 }
+
+function odd_even_check(val_1){
+	
+	if(val_1 % 2 == 1){return 1} // is odd
+	if(val_1 % 2 == 0){return 0} // is even
+	
+}
