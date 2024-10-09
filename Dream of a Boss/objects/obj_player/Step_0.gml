@@ -1,21 +1,21 @@
 //Baisic Movment
 	if(keyboard_check(ord("W"))){
-		y -= yspeed;	
+		y -= (yspeed + dashdistance);	
 		moving = true;
 	} 
 
 	if(keyboard_check(ord("S"))){
-		y += yspeed;	
+		y +=( yspeed + dashdistance);	
 		moving = true;
 	}
 
 	if(keyboard_check(ord("A"))){
-		x -=xspeed;
+		x -=(xspeed + dashdistance);
 			moving = true;
 	} 
 
 	if(keyboard_check(ord("D"))){
-		x +=xspeed;
+		x += (xspeed + dashdistance);
 			moving = true;
 	} 
 	// Moving Reset 
@@ -38,16 +38,26 @@
 						//image_angle -= 2;
 			image_angle = clamp(image_angle - 2,-10,10);
 		}
-	
 	} 
 	
 	// Clean up the image angle if its not as 0 and we arent moving
 	if(moving == false && image_angle != 0 ){		
 		image_angle = Snapshotangle;
 	}
-
-
+	
+	
 // Dash
-
+	if(keyboard_check_pressed(ord("K"))&& moving == true&&candash == true&& Stamina >=40){
+			dashdistance = 40;
+			candash = false;
+			Stamina -= 40;
+			alarm[1] = 5;
+			alarm[2] = Dash_timer;
+	} 
 
 // Attack
+	if(keyboard_check_pressed(ord("J"))){
+			// spawn a Attack
+			// Desotry it after X frames
+			instance_create_layer(x,y-100,"Main_layer",obj_player_attack);
+		} 
