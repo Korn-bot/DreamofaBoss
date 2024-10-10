@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"p_boss_patrol",
+  "closed":false,
+  "kind":0,
+  "name":"p_boss_patrol",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":160.0,"y":0.0,},
+    {"speed":100.0,"x":1200.0,"y":0.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

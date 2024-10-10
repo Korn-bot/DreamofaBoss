@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"p_boss_attack_2_reverse",
+  "closed":false,
+  "kind":0,
+  "name":"p_boss_attack_2_reverse",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":0.0,"y":768.0,},
+    {"speed":100.0,"x":1366.0,"y":768.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -6,7 +6,10 @@
 //Dashes
 	dashdistance =0;
 	candash = true;
-	Dash_timer = 60; 
+	Dash_timer = 60;
+	 // Iframes
+		canbehit = true;
+		Iframes =  5 ;
 	
 // Player Stats
 	HP = 100;
@@ -21,3 +24,7 @@
 
 // layer
 currentlayer = layer_get_id("Instances");
+
+//attacking
+	canattack = true;
+	attack_cd = 60;

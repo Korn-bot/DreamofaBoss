@@ -51,13 +51,17 @@
 			dashdistance = 40;
 			candash = false;
 			Stamina -= 40;
+			canbehit = false;
 			alarm[1] = 5;
 			alarm[2] = Dash_timer;
+			
 	} 
 
 // Attack
-	if(keyboard_check_pressed(ord("J"))){
+	if(keyboard_check_pressed(ord("J"))&& canattack == true){
 			// spawn a Attack
 			// Desotry it after X frames
 			instance_create_layer(x,y-100,"Main_layer",obj_player_attack);
+			canattack = false;
+			alarm[3] = attack_cd;
 		} 

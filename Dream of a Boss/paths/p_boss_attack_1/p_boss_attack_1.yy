@@ -1,0 +1,25 @@
+{
+  "$GMPath":"",
+  "%Name":"p_boss_attack_1",
+  "closed":false,
+  "kind":0,
+  "name":"p_boss_attack_1",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":1366.0,"y":768.0,},
+    {"speed":100.0,"x":1166.0,"y":410.0,},
+    {"speed":100.0,"x":966.0,"y":768.0,},
+    {"speed":100.0,"x":766.0,"y":410.0,},
+    {"speed":100.0,"x":566.0,"y":768.0,},
+    {"speed":100.0,"x":366.0,"y":410.0,},
+    {"speed":100.0,"x":166.0,"y":768.0,},
+    {"speed":100.0,"x":0.0,"y":410.0,},
+    {"speed":100.0,"x":0.0,"y":768.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+Boss attacks : 
+
+1 : spawn attacsk on the arena if it hits the play , player takes dmg
+1.1 : all attacks will spawn with a path that it executes then its dies
+
+Player logic : 
+
+
+1 spawn coffee from sky , if u stand on top of it , it will restr you hp 
+ 1.1 If u miss it , it will heal the boss
+ 
+ Documents fall from sky , if they hit u , u take damage , if u slice it it will damage the boss
+ 

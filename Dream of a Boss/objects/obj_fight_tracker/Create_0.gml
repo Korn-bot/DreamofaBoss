@@ -4,4 +4,5 @@ Player =  obj_player;
 
 Boss =  obj_boss;
 
-room.speed = 60;
+// Room speed broke ELP
+//room.speed = 60;
