@@ -7,8 +7,8 @@ HP = 100;
 //Start the alrm every 5 frames
 	alarm[0] = 30 ;
 
-path_start(p_boss_patrol,5,path_action_reverse,false);
 
+path_start(p_boss_patrol,5,path_action_reverse,false);
 
 // boss attacks
 canattack = true;

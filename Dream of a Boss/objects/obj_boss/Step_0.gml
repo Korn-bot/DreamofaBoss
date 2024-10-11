@@ -20,11 +20,12 @@ switch(Boss_state_machine){
 		
 		var parrent_speed = 10;
 		attack_cd_timer =120;
+	//	path_speed = 5;
 		
 		if(canattack == true){	
 				
 					rand = irandom_range(1,3);
-			
+					
 					if(rand == 1){
 						sprite_index = attack_sprite;									
 						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
@@ -55,8 +56,9 @@ switch(Boss_state_machine){
 	
 	case boss_state.Phase_2 :
 	
-	var parrent_speed = 12;
+    	var parrent_speed = 12;
 		attack_cd_timer =80;
+
 		
 		if(canattack == true){	
 				
@@ -92,8 +94,9 @@ switch(Boss_state_machine){
 
 	case boss_state.Phase_3 :
 	
-	var parrent_speed = 15;
+	  var parrent_speed = 15;
 		attack_cd_timer =60;
+
 		
 		if(canattack == true){	
 				
