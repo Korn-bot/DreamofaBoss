@@ -26,29 +26,29 @@ switch(Boss_state_machine){
 					rand = irandom_range(1,3);
 			
 					if(rand == 1){
-									
+						sprite_index = attack_sprite;									
 						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
 										
 					}
 		
 					if(rand == 2){
+							sprite_index = attack_sprite;			
 							Boss_attack(1633,700,obj_boss_attack_2,parrent_speed,p_boss_attack_2,false);		
 							Boss_attack(0,470,obj_boss_attack_2,parrent_speed,p_boss_attack_2_reverse,false);		
 						
 					}
 				
 					if(rand == 3){
-						
+						sprite_index = attack_sprite;			
 						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						
 						
 					}
-					timeline_position = 0;
-			     	timeline_running = false;
 					canattack = false;
 					alarm[1] = attack_cd_timer;					
+					sprite_index = idle_sprite;
 			}
 			
 	break;
@@ -63,29 +63,29 @@ switch(Boss_state_machine){
 					rand = irandom_range(1,3);
 			
 					if(rand == 1){
-									
+										sprite_index = attack_sprite;			
 						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
 										
 					}
 		
 					if(rand == 2){
+							sprite_index = attack_sprite;			
 							Boss_attack(1633,700,obj_boss_attack_2,parrent_speed,p_boss_attack_2,false);		
 							Boss_attack(0,470,obj_boss_attack_2,parrent_speed,p_boss_attack_2_reverse,false);		
 						
 					}
 				
 					if(rand == 3){
-						
+							sprite_index = attack_sprite;			
 						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						
 						
 					}
-					timeline_position = 0;
-			     	timeline_running = false;
 					canattack = false;
-					alarm[1] = attack_cd_timer;					
+					alarm[1] = attack_cd_timer;		
+					sprite_index = idle_sprite;
 			}
 			
 	break;
@@ -100,29 +100,30 @@ switch(Boss_state_machine){
 					rand = irandom_range(1,3);
 			
 					if(rand == 1){
-									
+										sprite_index = attack_sprite;			
 						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
 										
 					}
 		
 					if(rand == 2){
+							sprite_index = attack_sprite;			
 							Boss_attack(1633,700,obj_boss_attack_2,parrent_speed,p_boss_attack_2,false);		
 							Boss_attack(0,470,obj_boss_attack_2,parrent_speed,p_boss_attack_2_reverse,false);		
 						
 					}
 				
 					if(rand == 3){
-						
+							sprite_index = attack_sprite;			
 						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						
 						
 					}
-					timeline_position = 0;
-			     	timeline_running = false;
+
 					canattack = false;
-					alarm[1] = attack_cd_timer;					
+					alarm[1] = attack_cd_timer;	
+					sprite_index = idle_sprite;
 			}
 	
 	

@@ -24,4 +24,8 @@ enum boss_state{
 
 Boss_state_machine = boss_state.Phase_1;
 
+idle_sprite = sp_boss_idle;
+attack_sprite = sp_boss_attack;
+
+sprite_index = idle_sprite;
 
