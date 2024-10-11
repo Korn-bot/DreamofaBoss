@@ -12,7 +12,7 @@ path_start(p_boss_patrol,5,path_action_reverse,false);
 
 // boss attacks
 canattack = true;
-attack_cd_timer = 60;
+attack_cd_timer =120;
 rand = 1;
 
 enum boss_state{
@@ -23,3 +23,5 @@ enum boss_state{
 }
 
 Boss_state_machine = boss_state.Phase_1;
+
+

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss_attack_1",
+  "%Name":"obj_boss_attack_3",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss_attack_1",
+  "name":"obj_boss_attack_3",
   "overriddenProperties":[],
   "parent":{
     "name":"Boss_attacks",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_attack",
-    "path":"sprites/sp_attack/sp_attack.yy",
+    "name":"sp_attack_2",
+    "path":"sprites/sp_attack_2/sp_attack_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

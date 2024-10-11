@@ -17,36 +17,36 @@ if(HP < 30){ Boss_state_machine = boss_state.Phase_3 }
 switch(Boss_state_machine){
 
 	case boss_state.Phase_1 :
-
-	
+		
+		var parrent_speed = 10;
+		attack_cd_timer =120;
+		
 		if(canattack == true){	
 				
 					rand = irandom_range(1,3);
 			
 					if(rand == 1){
-						instance_create_layer(0,0,"Main_layer",obj_boss_attack_1,{ 
-							attack_speed  :  10,
-							path : p_boss_attack_1,
-							relative : true
-						});
+									
+						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+										
 					}
 		
 					if(rand == 2){
-						instance_create_layer(1633,575,"Main_layer",obj_boss_attack_2,{ 
-							attack_speed  :  10,
-							path : p_boss_attack_2,
-							relative : false
-						} );
+							Boss_attack(1633,700,obj_boss_attack_2,parrent_speed,p_boss_attack_2,false);		
+							Boss_attack(0,470,obj_boss_attack_2,parrent_speed,p_boss_attack_2_reverse,false);		
+						
 					}
 				
 					if(rand == 3){
-						instance_create_layer(0,575,"Main_layer",obj_boss_attack_2,{ 
-							attack_speed  :  10,
-							path : p_boss_attack_2_reverse,
-							relative : false
-						} );
+						
+						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						
+						
 					}
-				
+					timeline_position = 0;
+			     	timeline_running = false;
 					canattack = false;
 					alarm[1] = attack_cd_timer;					
 			}
@@ -55,9 +55,76 @@ switch(Boss_state_machine){
 	
 	case boss_state.Phase_2 :
 	
+	var parrent_speed = 12;
+		attack_cd_timer =80;
+		
+		if(canattack == true){	
+				
+					rand = irandom_range(1,3);
+			
+					if(rand == 1){
+									
+						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+										
+					}
+		
+					if(rand == 2){
+							Boss_attack(1633,700,obj_boss_attack_2,parrent_speed,p_boss_attack_2,false);		
+							Boss_attack(0,470,obj_boss_attack_2,parrent_speed,p_boss_attack_2_reverse,false);		
+						
+					}
+				
+					if(rand == 3){
+						
+						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						
+						
+					}
+					timeline_position = 0;
+			     	timeline_running = false;
+					canattack = false;
+					alarm[1] = attack_cd_timer;					
+			}
+			
 	break;
 
 	case boss_state.Phase_3 :
+	
+	var parrent_speed = 15;
+		attack_cd_timer =60;
+		
+		if(canattack == true){	
+				
+					rand = irandom_range(1,3);
+			
+					if(rand == 1){
+									
+						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+										
+					}
+		
+					if(rand == 2){
+							Boss_attack(1633,700,obj_boss_attack_2,parrent_speed,p_boss_attack_2,false);		
+							Boss_attack(0,470,obj_boss_attack_2,parrent_speed,p_boss_attack_2_reverse,false);		
+						
+					}
+				
+					if(rand == 3){
+						
+						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						
+						
+					}
+					timeline_position = 0;
+			     	timeline_running = false;
+					canattack = false;
+					alarm[1] = attack_cd_timer;					
+			}
+	
 	
 	break;
 
