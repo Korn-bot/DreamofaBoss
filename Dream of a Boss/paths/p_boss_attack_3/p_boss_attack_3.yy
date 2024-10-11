@@ -10,7 +10,7 @@
   },
   "points":[
     {"speed":100.0,"x":0.0,"y":33.0,},
-    {"speed":100.0,"x":0.0,"y":630.0,},
+    {"speed":100.0,"x":0.0,"y":1200.0,},
   ],
   "precision":4,
   "resourceType":"GMPath",

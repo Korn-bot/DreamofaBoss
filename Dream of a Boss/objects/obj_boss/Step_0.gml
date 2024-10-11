@@ -41,11 +41,15 @@ switch(Boss_state_machine){
 				
 					if(rand == 3){
 						sprite_index = attack_sprite;			
-						Boss_attack(0,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-						Boss_attack(800,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-						Boss_attack(1360,280,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						
 						
+						var split = 3;
+						var split_math = room_width / split;
+
+						for(i = 0;i < (split+1);i++){
+							//attack split amout of times 
+							Boss_attack(0+40 + (i *split_math),80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						}
 					}
 					canattack = false;
 					alarm[1] = attack_cd_timer;					
