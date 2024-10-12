@@ -28,7 +28,11 @@ switch(Boss_state_machine){
 					
 					if(rand == 1){
 						sprite_index = attack_sprite;									
-						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+						Boss_attack(1366,768,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+
+						Boss_attack(1366,648,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+						//room_width
+						//1633
 										
 					}
 		
@@ -43,9 +47,9 @@ switch(Boss_state_machine){
 						sprite_index = attack_sprite;			
 						
 						
-					Boss_attack(0+40,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-					Boss_attack(room_width/2,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-					Boss_attack(room_width,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(0+40,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(room_width/2,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(room_width,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 					}
 					
 					canattack = false;
@@ -57,6 +61,7 @@ switch(Boss_state_machine){
 	
 	case boss_state.Phase_2 :
 	
+		image_blend = c_red;
     	var parrent_speed = 12;
 		attack_cd_timer =80;
 
@@ -67,7 +72,9 @@ switch(Boss_state_machine){
 			
 					if(rand == 1){
 										sprite_index = attack_sprite;			
-						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+						Boss_attack(1366,768,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+
+						Boss_attack(1366,648,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
 										
 					}
 		
@@ -80,9 +87,9 @@ switch(Boss_state_machine){
 				
 					if(rand == 3){
 							sprite_index = attack_sprite;			
-					Boss_attack(0+40,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-					Boss_attack(room_width/2,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-					Boss_attack(room_width,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(0+40,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(room_width/2,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(room_width,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						
 						
 					}
@@ -92,9 +99,9 @@ switch(Boss_state_machine){
 			}
 			
 	break;
-
-	case boss_state.Phase_3 :
 	
+	case boss_state.Phase_3 :
+		image_blend = c_black;
 	  var parrent_speed = 15;
 		attack_cd_timer =60;
 
@@ -105,7 +112,9 @@ switch(Boss_state_machine){
 			
 					if(rand == 1){
 										sprite_index = attack_sprite;			
-						Boss_attack(1633,760,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+						Boss_attack(1366,768,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
+
+						Boss_attack(1366,648,obj_boss_attack_1,parrent_speed,p_boss_attack_1,false);
 										
 					}
 		
@@ -118,9 +127,9 @@ switch(Boss_state_machine){
 				
 					if(rand == 3){
 							sprite_index = attack_sprite;			
-					Boss_attack(0+40,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-					Boss_attack(room_width/2,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
-					Boss_attack(room_width,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(0+40,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(room_width/2,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
+						Boss_attack(room_width,80,obj_boss_attack_3,parrent_speed,p_boss_attack_3,false);
 						
 						
 					}
