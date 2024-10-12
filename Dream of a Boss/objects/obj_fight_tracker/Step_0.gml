@@ -1,11 +1,11 @@
 if(Player.HP  <= 0){
-show_message("U Died Noob! kekw");
-room_goto(Main_menu_room);	
+
+room_goto(r_lost);	
 }
 
 if(Boss.HP  <= 0){
-show_message("U WON POGGIE !!!");
-room_goto(Main_menu_room);	
+
+room_goto(r_won);	
 }
 	
 	

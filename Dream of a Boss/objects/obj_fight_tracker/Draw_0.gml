@@ -25,7 +25,7 @@
 	var normal_boss_hp = Boss.HP/100
 	var display_boss_hp = normal_boss_hp * 300;
 	draw_rectangle_color(1000,20,1000 + display_boss_hp ,40,c_red,c_red,c_red,c_red,false);
-	draw_text_color(1002,22,"BOSS HP : " + string(Player.HP),c_white,c_white,c_white,c_white,1);
+	draw_text_color(1002,22,"BOSS HP : " + string(Boss.HP),c_white,c_white,c_white,c_white,1);
 	
 	
 	// TEMP Test

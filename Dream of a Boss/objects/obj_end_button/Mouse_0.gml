@@ -1,0 +1,1 @@
+show_message("Well well well, since this is a browser game , what did you expect... to close the browser ? shutdown your pc ? well I ran out of ideas but wanted a End button so here u go :D");
